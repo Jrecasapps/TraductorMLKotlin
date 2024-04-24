@@ -1,0 +1,98 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/botones_linear">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/traductor_img" />
+
+            <EditText
+                android:id="@+id/Et_Idioma_Origen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="start"
+                android:hint="@string/Et_Idioma_Origen"
+                android:minHeight="100dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat_light"/>
+
+            <TextView
+                android:id="@+id/Tv_Idioma_Destino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Tv_Idioma_Destino"
+                android:fontFamily="@font/montserrat_italic"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/botones_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_above="@+id/Btn_Traducir">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Btn_Elegir_Idioma"
+            android:text="@string/Btn_Elegir_Idioma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            app:cornerRadius="10dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_cambiar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Btn_Idioma_Elegido"
+            android:text="@string/Btn_Idioma_Elegido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            app:cornerRadius="10dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Btn_Traducir"
+        android:text="@string/Btn_Traducir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        app:icon="@drawable/ic_traducir"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

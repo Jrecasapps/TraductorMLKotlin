@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Traductor ML - KOTLIN</string>
+    <string name="Tv_Bienvenida">Bienvenidos(as)</string>
+
+    <string name="Et_Idioma_Origen">Ingrese Texto</string>
+    <string name="Tv_Idioma_Destino">Traduccion</string>
+    <string name="Btn_Elegir_Idioma">Español</string>
+    <string name="Btn_Idioma_Elegido">Ingles</string>
+    <string name="Btn_Traducir">Traducir</string>
+
+    <string name="Menu_Limpiar_texto">Limpiar</string>
+    <string name="Menu_Informacion">Informacion</string>
+
+    <string name="Txt_mensaje">Se requiere de una conexion wifi para desargar los paquetes de idiomas</string>
+    <string name="Btn_entendido">Entendido</string>
+
+</resources>
